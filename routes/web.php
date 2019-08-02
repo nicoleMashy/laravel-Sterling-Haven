@@ -14,3 +14,29 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('products',[
+    'as' => 'products',
+    'uses' => 'PagesController@getProducts'
+]);
+
+Route::get('dishwash',[
+    'as' => 'dishwash',
+    'uses' => 'PagesController@getDishwash'
+]);
+Route::get('powder',[
+    'as' => 'powder',
+    'uses' => 'PagesController@getPowder'
+]);
+Route::get('toilet',[
+    'as' => 'toilet',
+    'uses' => 'PagesController@getToilet'
+]);
+Route::get('contact',[
+    'as' => 'contact',
+    'uses' => 'PagesController@getContact'
+]);
+Route::get('gallery',[
+    'as' => 'gallery',
+    'uses' => 'PagesController@getGallery'
+]);
